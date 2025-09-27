@@ -1,0 +1,35 @@
+Objetivo del Sprint Cero:  es establecer las bases del proyecto y crear una versión inicial del diseño del sistema. Se espera que al finalizar este sprint, el equipo haya formulado el proyecto, identificado historias de usuario relevantes, creado un bosquejo de las pantallas principales y desarrollado un prototipo interactivo utilizando la herramienta Figma.
+
+Entregables del Primer Sprint:
+
+Formulación del Proyecto:
+
+Definición del objetivo del proyecto y los requisitos generales.
+Identificación de los stakeholders y sus expectativas.
+Establecimiento de los criterios de éxito del proyecto.
+Historias de Usuario:
+
+Identificación de las principales funcionalidades del sistema desde la perspectiva del usuario.
+Descripción detallada de cada historia de usuario, incluyendo título, descripción, criterios de aceptación y puntos de historia estimados.
+Bosquejo de Pantallas:
+
+Creación de un bosquejo básico que represente las pantallas principales del sistema.
+Inclusión de elementos de interfaz de usuario básicos y disposición general de la información en cada pantalla.
+Prototipo en Figma:
+
+Desarrollo de un prototipo interactivo utilizando la herramienta Figma.
+Inclusión de las pantallas principales del sistema y la navegación básica entre ellas.
+Incorporación de elementos de diseño como botones, campos de entrada y elementos de navegación.
+Roles y Responsabilidades:
+
+Product Owner: Responsable de definir y priorizar las historias de usuario.
+Scrum Master: Encargado de facilitar el proceso de desarrollo y eliminar los obstáculos que enfrenta el equipo.
+Equipo de Desarrollo: Encargado de formular el proyecto, identificar historias de usuario, crear el bosquejo de pantallas y desarrollar el prototipo en Figma.
+Duración del Sprint: 2 semanas
+
+Reuniones Scrum:
+
+Daily Standup: Se llevarán a cabo reuniones diarias de seguimiento para compartir el progreso y los posibles obstáculos.
+Sprint Planning: Al comienzo del sprint, se realizará una reunión de planificación para definir los objetivos y seleccionar las historias de usuario a implementar.
+Sprint Review: Al finalizar el sprint, se llevará a cabo una reunión de revisión para demostrar los entregables y recopilar feedback.
+Sprint Retrospective: También al finalizar el sprint, se realizará una reunión retrospectiva para identificar mejoras y ajustes para los próximos sprints.
