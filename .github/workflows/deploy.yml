@@ -1,6 +1,7 @@
 name: Desplegar sitio a GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
