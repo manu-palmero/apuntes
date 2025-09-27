@@ -1,0 +1,5 @@
+- [ ] Regulador de voltaje
+- [ ] Portafusible 20x5
+- [ ] Conectores banana hembra
+- [ ] Cables con conector banana macho
+- [ ] 
