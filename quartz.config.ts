@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "es-ES",
     baseUrl: "manu-palmero.github.io/apuntes",
     ignorePatterns: ["Personal", "Plantillas", ".obsidian", ".trash"],
     defaultDateType: "modified",
