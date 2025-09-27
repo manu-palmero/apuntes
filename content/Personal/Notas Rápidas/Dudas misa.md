@@ -1,1 +1,0 @@
-- En qué momento del pater noster se llama a los diáconos?
