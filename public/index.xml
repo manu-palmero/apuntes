@@ -6,65 +6,65 @@
       <description>Últimas 10 notas on Hola</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Página principal</title>
+    <link>https://manu-palmero.github.io/apuntes/</link>
+    <guid>https://manu-palmero.github.io/apuntes/</guid>
+    <description><![CDATA[ Página inicial (⁠ ⁠╹⁠▽⁠╹⁠ ⁠) E Apuntes de cursos Mantenimiento y reparación de computadoras Índice Programación Próximamente Cosas útiles de computadoras Cosas de Linux Instalación de Arch Linux Configuración de GRUB Hay más cosas en la carpeta de Computadoras Recetas de cocina Próximamente. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:43:50 GMT</pubDate>
+  </item><item>
+    <title>Pantalla de arranque personalizada con plymouth</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</guid>
+    <description><![CDATA[ Instalar plymouth con los temas básicos: sudo apt install plymouth plymouth-themes firmware-linux Editar el archivo de configuración de GRUB en /etc/default/grub: sudo nano /etc/default/grub Dentro del archivo añadir la opción splash a los comandos por defecto del arranque de la siguiente forma: GRU... ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:43:05 GMT</pubDate>
+  </item><item>
+    <title>Instalación de Arch Linux y configuración</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</guid>
+    <description><![CDATA[ Pre-instalación Requisitos Conexión a Internet. Unidad USB Arrancable. Imagen de Arch Linux. 1. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:40:47 GMT</pubDate>
+  </item><item>
+    <title>Desactivar suspención de la salida de audio</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-suspenci%C3%B3n-de-la-salida-de-audio</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-suspenci%C3%B3n-de-la-salida-de-audio</guid>
+    <description><![CDATA[ Desactivar la suspención de la salida de audio (Pipewire, Wireplumber) Por defecto, la salida de audio se suspende luego de cinco segundos de inactividad, lo que genera ruido blanco en los altavoces y un notable retraso de audio al habilitar de nuevo la salida después de haber sido suspendida. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:37:05 GMT</pubDate>
+  </item><item>
+    <title>Gobernador del CPU</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Teor%C3%ADa/Gobernador-del-CPU</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Teor%C3%ADa/Gobernador-del-CPU</guid>
+    <description><![CDATA[ Definición Es un componente del núcleo de Linux que decide a qué frecuencia debe funcionar el procesador en cada momento en función de diferentes criterios como: el uso actual de la CPU, el consumo de energía, la temperatura, etc. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:36:07 GMT</pubDate>
+  </item><item>
+    <title>Orden de ejecución para archivos de configuración</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Orden-de-ejecuci%C3%B3n-para-archivos-de-configuraci%C3%B3n</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Orden-de-ejecuci%C3%B3n-para-archivos-de-configuraci%C3%B3n</guid>
+    <description><![CDATA[ Las reglas o archivos de configuración en Linux se ejecutan en orden ascendente siguiendo los números de los nombres de los archivos, por ejemplo: 00-inicio 10-proceso 20-final . ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:34:54 GMT</pubDate>
+  </item><item>
+    <title>Convertir entre formatos de discos virtuales</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Convertir-entre-formatos-de-discos-virtuales</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Convertir-entre-formatos-de-discos-virtuales</guid>
+    <description><![CDATA[ Convertir entre formatos de discos virtuales Comando principal Se hace todo con el comando qemu-img con las siguientes opciones: convert: Convierte una imagen de disco de un formato a otro. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:34:03 GMT</pubDate>
+  </item><item>
+    <title>Configuración de GRUB</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Configuraci%C3%B3n-de-GRUB</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Configuraci%C3%B3n-de-GRUB</guid>
+    <description><![CDATA[ La configuración por defecto de GRUB se encuentra en /etc/default/grub. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:33:53 GMT</pubDate>
+  </item><item>
+    <title>Ejectutar sudo sin contraseña</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</guid>
+    <description><![CDATA[ Para ejecutar sudo sin contraseña se debe crear un archivo dentro de /etc/sudoers.d/ con el formato del orden de ejecución para reglas, por ejemplo 10-user, que contenga: usuario ALL=(ALL) NOPASSWD: ALL También se puede agregar esta línea directamente en /etc/sudoers, pero es más recomendable y orde... ]]></description>
+    <pubDate>Sun, 05 Oct 2025 02:32:51 GMT</pubDate>
+  </item><item>
     <title>Procesador</title>
     <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Procesador</link>
     <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Procesador</guid>
     <description><![CDATA[ Unidad de procesamiento central ]]></description>
     <pubDate>Sat, 27 Sep 2025 20:54:18 GMT</pubDate>
-  </item><item>
-    <title>Disipador del Procesador</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Disipador-del-Procesador</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Disipador-del-Procesador</guid>
-    <description><![CDATA[ Disipador del Procesador. ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:54:03 GMT</pubDate>
-  </item><item>
-    <title>Ventiladores del gabinete</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Gabinete/Ventiladores-del-gabinete</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Gabinete/Ventiladores-del-gabinete</guid>
-    <description><![CDATA[ Ventiladores del gabinete. ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:52:48 GMT</pubDate>
-  </item><item>
-    <title>Carcasa</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Gabinete/Carcasa</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Gabinete/Carcasa</guid>
-    <description><![CDATA[ Teclado. ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:52:13 GMT</pubDate>
-  </item><item>
-    <title>Ratón</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Externo/Rat%C3%B3n</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Externo/Rat%C3%B3n</guid>
-    <description><![CDATA[ Ratón. ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:51:52 GMT</pubDate>
-  </item><item>
-    <title>Teclado</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Externo/Teclado</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Externo/Teclado</guid>
-    <description><![CDATA[ Teclado. ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:51:49 GMT</pubDate>
-  </item><item>
-    <title>Placa madre</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Placa-madre</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Placa-madre</guid>
-    <description><![CDATA[ Placa madre de la computadora ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:34:43 GMT</pubDate>
-  </item><item>
-    <title>Memoria RAM</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Memoria-RAM</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Memoria-RAM</guid>
-    <description><![CDATA[ Memoria de acceso aleatorio de la computadora ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:34:38 GMT</pubDate>
-  </item><item>
-    <title>Introducción a las computadoras</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Introducci%C3%B3n/Introducci%C3%B3n-a-las-computadoras</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Introducci%C3%B3n/Introducci%C3%B3n-a-las-computadoras</guid>
-    <description><![CDATA[ Introducción a las computadoras ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:34:27 GMT</pubDate>
-  </item><item>
-    <title>Sistema Operativo</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Sistema-Operativo</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Sistema-Operativo</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:33:55 GMT</pubDate>
   </item>
     </channel>
   </rss>
