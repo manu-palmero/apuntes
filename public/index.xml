@@ -9,20 +9,20 @@
     <title>Página principal</title>
     <link>https://manu-palmero.github.io/apuntes/</link>
     <guid>https://manu-palmero.github.io/apuntes/</guid>
-    <description><![CDATA[ Página inicial (⁠ ⁠╹⁠▽⁠╹⁠ ⁠) E Apuntes de cursos Mantenimiento y reparación de computadoras Índice Programación Próximamente Cosas útiles de computadoras Cosas de Linux Instalación de Arch Linux Configuración de GRUB Hay más cosas en la carpeta de Computadoras Recetas de cocina Próximamente. ]]></description>
-    <pubDate>Sun, 05 Oct 2025 02:43:50 GMT</pubDate>
+    <description><![CDATA[ Página inicial (⁠ ⁠╹⁠▽⁠╹⁠ ⁠) E Apuntes de cursos Mantenimiento y reparación de computadoras Índice Programación Próximamente Cosas útiles de computadoras Cosas de Linux Instalación de Arch Linux Configuración de GRUB Hay más cosas en la carpeta de Cosas Útiles/Computadoras Recetas de cocina Próximam... ]]></description>
+    <pubDate>Sun, 05 Oct 2025 03:01:24 GMT</pubDate>
+  </item><item>
+    <title>Instalación de Arch Linux y configuración</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</guid>
+    <description><![CDATA[  Falta terminar Pre-instalación Requisitos Conexión a Internet. Unidad USB Arrancable. Imagen de Arch Linux. 1. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 03:00:50 GMT</pubDate>
   </item><item>
     <title>Pantalla de arranque personalizada con plymouth</title>
     <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</link>
     <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</guid>
     <description><![CDATA[ Instalar plymouth con los temas básicos: sudo apt install plymouth plymouth-themes firmware-linux Editar el archivo de configuración de GRUB en /etc/default/grub: sudo nano /etc/default/grub Dentro del archivo añadir la opción splash a los comandos por defecto del arranque de la siguiente forma: GRU... ]]></description>
     <pubDate>Sun, 05 Oct 2025 02:43:05 GMT</pubDate>
-  </item><item>
-    <title>Instalación de Arch Linux y configuración</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</guid>
-    <description><![CDATA[ Pre-instalación Requisitos Conexión a Internet. Unidad USB Arrancable. Imagen de Arch Linux. 1. ]]></description>
-    <pubDate>Sun, 05 Oct 2025 02:40:47 GMT</pubDate>
   </item><item>
     <title>Desactivar suspención de la salida de audio</title>
     <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-suspenci%C3%B3n-de-la-salida-de-audio</link>
