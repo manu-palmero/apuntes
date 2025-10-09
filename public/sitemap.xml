@@ -1,7 +1,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Configuraci%C3%B3n-de-GRUB</loc>
-    <lastmod>2025-10-05T02:33:53.835Z</lastmod>
-  </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Convertir-entre-formatos-de-discos-virtuales</loc>
     <lastmod>2025-10-05T02:34:03.574Z</lastmod>
   </url><url>
@@ -13,6 +10,12 @@
   </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</loc>
     <lastmod>2025-10-05T02:43:05.166Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Configuraci%C3%B3n-de-GRUB</loc>
+    <lastmod>2025-10-09T18:13:55.786Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-modo-escritorio-Bazzite-OS</loc>
+    <lastmod>2025-10-09T18:56:02.073Z</lastmod>
   </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</loc>
     <lastmod>2025-10-05T03:00:50.971Z</lastmod>

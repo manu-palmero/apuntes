@@ -6,6 +6,18 @@
       <description>Últimas 10 notas on Hola</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Inicio automático en escritorio en Bazzite OS</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-modo-escritorio-Bazzite-OS</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-modo-escritorio-Bazzite-OS</guid>
+    <description><![CDATA[ Inicio automático en el modo escritorio al arrancar en Bazzite OS El problema La imagen de Bazzite OS para Steam Deck viene configurada para iniciar siempre en el modo juego, ya que está orientada a este tipo de dispositivos. ]]></description>
+    <pubDate>Thu, 09 Oct 2025 18:56:02 GMT</pubDate>
+  </item><item>
+    <title>Configuración de GRUB</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Configuraci%C3%B3n-de-GRUB</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Configuraci%C3%B3n-de-GRUB</guid>
+    <description><![CDATA[ La configuración por defecto de GRUB se encuentra en /etc/default/grub. ]]></description>
+    <pubDate>Thu, 09 Oct 2025 18:13:55 GMT</pubDate>
+  </item><item>
     <title>Página principal</title>
     <link>https://manu-palmero.github.io/apuntes/</link>
     <guid>https://manu-palmero.github.io/apuntes/</guid>
@@ -48,23 +60,11 @@
     <description><![CDATA[ Convertir entre formatos de discos virtuales Comando principal Se hace todo con el comando qemu-img con las siguientes opciones: convert: Convierte una imagen de disco de un formato a otro. ]]></description>
     <pubDate>Sun, 05 Oct 2025 02:34:03 GMT</pubDate>
   </item><item>
-    <title>Configuración de GRUB</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Configuraci%C3%B3n-de-GRUB</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Configuraci%C3%B3n-de-GRUB</guid>
-    <description><![CDATA[ La configuración por defecto de GRUB se encuentra en /etc/default/grub. ]]></description>
-    <pubDate>Sun, 05 Oct 2025 02:33:53 GMT</pubDate>
-  </item><item>
     <title>Ejectutar sudo sin contraseña</title>
     <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</link>
     <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</guid>
     <description><![CDATA[ Para ejecutar sudo sin contraseña se debe crear un archivo dentro de /etc/sudoers.d/ con el formato del orden de ejecución para reglas, por ejemplo 10-user, que contenga: usuario ALL=(ALL) NOPASSWD: ALL También se puede agregar esta línea directamente en /etc/sudoers, pero es más recomendable y orde... ]]></description>
     <pubDate>Sun, 05 Oct 2025 02:32:51 GMT</pubDate>
-  </item><item>
-    <title>Procesador</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Procesador</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Interno/Procesador</guid>
-    <description><![CDATA[ Unidad de procesamiento central ]]></description>
-    <pubDate>Sat, 27 Sep 2025 20:54:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
