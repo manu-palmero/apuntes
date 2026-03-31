@@ -17,8 +17,8 @@ const Description: QuartzComponent = ({ fileData, displayClass }: QuartzComponen
 Description.css = `
 .page-description {
   margin: 1rem 0;
-  opacity: 0.8;
-  font-size: 0.95em;
+  opacity: 0.75;
+  font-size: 0.90em;
   line-height: 1.5;
   color: var(--darkgray);
 }
