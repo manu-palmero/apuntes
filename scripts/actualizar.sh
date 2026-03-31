@@ -30,6 +30,7 @@ mkdir -p "$CONTENT_DIR"
 
 # Definición de carpeta objetivo para operaciones de git
 PUBLIC_DIR="public"
+WORKFLOW_MARKER="[quartz-sync]"
 
 # Sincronización con rsync (solo cambios necesarios)
 echo "📂 Sincronizando contenido..."
@@ -65,7 +66,12 @@ fi
 
 # Commit limitado únicamente a public
 echo "💾 Haciendo commit..."
-if ! git commit -m "$COMMIT_MSG" -- "$PUBLIC_DIR" >/dev/null; then
+commit_message="$COMMIT_MSG"
+if [[ "$commit_message" != *"$WORKFLOW_MARKER"* ]]; then
+  commit_message="$WORKFLOW_MARKER $commit_message"
+fi
+
+if ! git commit -m "$commit_message" -- "$PUBLIC_DIR" >/dev/null; then
   echo "Error: commit falló"
   exit 1
 fi
