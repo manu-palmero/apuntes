@@ -12,9 +12,9 @@ const explorerOptions: Partial<Options> = {
     }
 
     // node.displayName = node.displayName.toUpperCase()
-    if (node.isFolder) {
-      node.displayName = "📁 " + node.displayName
-    }
+    // if (node.isFolder) {
+    //   node.displayName = "📁 " + node.displayName
+    // }
     // else {
     //   node.displayName = "📄 " + node.displayName
     // }
