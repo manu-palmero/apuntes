@@ -7,20 +7,20 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Component.Comments({
-    provider: 'giscus',
-    options: {
-      // from data-repo
-      repo: 'manu-palmero/apuntes',
-      // from data-repo-id
-      repoId: 'R_kgDOP3fW3w',
-      // from data-category
-      category: 'General',
-      // from data-category-id
-      categoryId: 'DIC_kwDOP3fW384C5qm0',
-      // from data-lang
-      lang: 'es'
-    }
-  }),
+      provider: "giscus",
+      options: {
+        // from data-repo
+        repo: "manu-palmero/apuntes",
+        // from data-repo-id
+        repoId: "R_kgDOP3fW3w",
+        // from data-category
+        category: "General",
+        // from data-category-id
+        categoryId: "DIC_kwDOP3fW384C5qm0",
+        // from data-lang
+        lang: "es",
+      },
+    }),
   ],
   footer: Component.Footer({
     links: {
