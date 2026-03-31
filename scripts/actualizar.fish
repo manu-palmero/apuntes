@@ -55,6 +55,9 @@ end
 # Crear la carpeta .content si no existe
 mkdir -p "$CONTENT_DIR"
 
+# Carpeta objetivo para operaciones de git
+set -l PUBLIC_DIR "public"
+
 # Sincronizar con rsync (solo cambios necesarios)
 echo "📂 Sincronizando contenido..."
 rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" >/dev/null
@@ -71,19 +74,19 @@ if test $status -ne 0
 	exit 1
 end
 
-# Verificar si hay cambios
-if git diff --quiet && git diff --cached --quiet
-	echo "✓ Sin cambios para sincronizar"
+# Agregar solo cambios de public al staging
+echo "📝 Agregando cambios de $PUBLIC_DIR..."
+git add "$PUBLIC_DIR" >/dev/null 2>/dev/null
+
+# Verificar si hay cambios solo en public
+if git diff --cached --quiet -- "$PUBLIC_DIR"
+	echo "✓ Sin cambios en $PUBLIC_DIR para sincronizar"
 	exit 0
 end
 
-# Agregar cambios al staging
-echo "📝 Agregando cambios..."
-git add "$CONTENT_DIR" >/dev/null 2>/dev/null
-
-# Hacer commit
+# Hacer commit solo de public
 echo "💾 Haciendo commit..."
-git commit -m "$COMMIT_MSG" >/dev/null 2>/dev/null
+git commit -m "$COMMIT_MSG" -- "$PUBLIC_DIR" >/dev/null 2>/dev/null
 if test $status -ne 0
 	echo "Error: commit falló"
 	exit 1

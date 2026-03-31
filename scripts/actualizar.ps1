@@ -50,6 +50,9 @@ try {
 # Crear la carpeta .content si no existe
 New-Item -ItemType Directory -Force -Path $CONTENT_DIR | Out-Null
 
+# Carpeta objetivo para operaciones de git
+$PUBLIC_DIR = "public"
+
 # Sincronizar con rsync (solo cambios necesarios)
 Write-Host "📂 Sincronizando contenido..."
 try {
@@ -66,25 +69,23 @@ try {
   Exit-WithError "Error: Quartz build falló"
 }
 
-# Verificar si hay cambios
-& git diff --quiet
-$diffStatus = $LASTEXITCODE
-& git diff --cached --quiet
-$cachedDiffStatus = $LASTEXITCODE
+# Agregar solo cambios de public al staging
+Write-Host "📝 Agregando cambios de $PUBLIC_DIR..."
+git add "$PUBLIC_DIR" 2>&1 | Where-Object { $_ } > $null
 
-if ($diffStatus -eq 0 -and $cachedDiffStatus -eq 0) {
-  Write-Host "✓ Sin cambios para sincronizar"
+# Verificar si hay cambios solo en public
+& git diff --cached --quiet -- "$PUBLIC_DIR"
+$cachedPublicStatus = $LASTEXITCODE
+
+if ($cachedPublicStatus -eq 0) {
+  Write-Host "✓ Sin cambios en $PUBLIC_DIR para sincronizar"
   exit 0
 }
 
-# Agregar cambios al staging
-Write-Host "📝 Agregando cambios..."
-git add "$CONTENT_DIR" 2>&1 | Where-Object { $_ } > $null
-
-# Hacer commit
+# Hacer commit solo de public
 Write-Host "💾 Haciendo commit..."
 try {
-  git commit -m "$COMMIT_MSG" 2>&1 | Where-Object { $_ } > $null
+  git commit -m "$COMMIT_MSG" -- "$PUBLIC_DIR" 2>&1 | Where-Object { $_ } > $null
 } catch {
   Exit-WithError "Error: commit falló"
 }
