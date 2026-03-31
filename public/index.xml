@@ -6,17 +6,17 @@
       <description>Últimas 10 notas on Hola</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Glosario de terminología y tecnicismos en IA como agente para programar y automatizar tareas</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Glosario-IA</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Glosario-IA</guid>
-    <description><![CDATA[ Este glosario recopila los términos más comunes y técnicos que se emplean al trabajar con agentes de IA en entornos de desarrollo. ]]></description>
-    <pubDate>Tue, 31 Mar 2026 18:03:27 GMT</pubDate>
-  </item><item>
-    <title>Agregar una imagen grande al expositor de Workshop de Steam</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</guid>
+    <title>Guía para agregar un GIF grande al expositor de Workshop de Steam</title>
+    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/agregar-gif-steam-workshop</link>
+    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/agregar-gif-steam-workshop</guid>
     <description><![CDATA[ Guía para agregar una imagen o GIF animado a tamaño completo, dividido en 5 partes verticales, al expositor de Workshop del perfil de Steam sin que se redimensionen las partes a un cuadrado pequeño. ]]></description>
-    <pubDate>Tue, 31 Mar 2026 03:57:50 GMT</pubDate>
+    <pubDate>Tue, 31 Mar 2026 18:17:13 GMT</pubDate>
+  </item><item>
+    <title>Glosario de terminología y tecnicismos en IA como agente para programar y automatizar tareas</title>
+    <link>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/glosario-ia</link>
+    <guid>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/glosario-ia</guid>
+    <description><![CDATA[ Este glosario recopila los términos más comunes y técnicos que se emplean al trabajar con agentes de IA en entornos de desarrollo. ]]></description>
+    <pubDate>Tue, 31 Mar 2026 18:15:57 GMT</pubDate>
   </item><item>
     <title>Dividir GIF en 5 partes con FFmpeg</title>
     <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Dividir-GIF-en-5-partes-con-FFmpeg</link>
