@@ -56,14 +56,16 @@ end
 mkdir -p "$CONTENT_DIR"
 
 # Sincronizar con rsync (solo cambios necesarios)
-rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" >/dev/null 2>/dev/null
+echo "📂 Sincronizando contenido..."
+rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" >/dev/null
 if test $status -ne 0
 	echo "Error: rsync falló"
 	exit 1
 end
 
 # Compilar con Quartz
-npx quartz build >/dev/null 2>/dev/null
+echo "🔨 Compilando con Quartz..."
+npx quartz build >/dev/null
 if test $status -ne 0
 	echo "Error: Quartz build falló"
 	exit 1
@@ -71,13 +73,16 @@ end
 
 # Verificar si hay cambios
 if git diff --quiet && git diff --cached --quiet
+	echo "✓ Sin cambios para sincronizar"
 	exit 0
 end
 
 # Agregar cambios al staging
+echo "📝 Agregando cambios..."
 git add "$CONTENT_DIR" >/dev/null 2>/dev/null
 
 # Hacer commit
+echo "💾 Haciendo commit..."
 git commit -m "$COMMIT_MSG" >/dev/null 2>/dev/null
 if test $status -ne 0
 	echo "Error: commit falló"
@@ -85,8 +90,11 @@ if test $status -ne 0
 end
 
 # Subir a GitHub
+echo "🚀 Subiendo a GitHub..."
 git push >/dev/null 2>/dev/null
 if test $status -ne 0
 	echo "Error: push falló"
 	exit 1
 end
+
+echo "✓ Sincronización completada exitosamente"

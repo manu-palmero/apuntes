@@ -51,15 +51,17 @@ try {
 New-Item -ItemType Directory -Force -Path $CONTENT_DIR | Out-Null
 
 # Sincronizar con rsync (solo cambios necesarios)
+Write-Host "📂 Sincronizando contenido..."
 try {
-  & rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" *> $null
+  & rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" 2>&1 | Where-Object { $_ } > $null
 } catch {
   Exit-WithError "Error: rsync falló"
 }
 
 # Compilar con Quartz
+Write-Host "🔨 Compilando con Quartz..."
 try {
-  npx quartz build *> $null
+  npx quartz build 2>&1 | Where-Object { $_ } > $null
 } catch {
   Exit-WithError "Error: Quartz build falló"
 }
@@ -71,22 +73,28 @@ $diffStatus = $LASTEXITCODE
 $cachedDiffStatus = $LASTEXITCODE
 
 if ($diffStatus -eq 0 -and $cachedDiffStatus -eq 0) {
+  Write-Host "✓ Sin cambios para sincronizar"
   exit 0
 }
 
 # Agregar cambios al staging
-git add "$CONTENT_DIR" *> $null
+Write-Host "📝 Agregando cambios..."
+git add "$CONTENT_DIR" 2>&1 | Where-Object { $_ } > $null
 
 # Hacer commit
+Write-Host "💾 Haciendo commit..."
 try {
-  git commit -m "$COMMIT_MSG" *> $null
+  git commit -m "$COMMIT_MSG" 2>&1 | Where-Object { $_ } > $null
 } catch {
   Exit-WithError "Error: commit falló"
 }
 
 # Subir a GitHub
+Write-Host "🚀 Subiendo a GitHub..."
 try {
-  git push *> $null
+  git push 2>&1 | Where-Object { $_ } > $null
 } catch {
   Exit-WithError "Error: push falló"
 }
+
+Write-Host "✓ Sincronización completada exitosamente"
