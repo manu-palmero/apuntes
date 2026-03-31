@@ -69,7 +69,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
       {list.map((page) => {
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
-        const description = page.frontmatter?.description?.trim()
+        const description = page.description?.trim() ?? page.frontmatter?.description?.trim()
 
         return (
           <li class="section-li">
@@ -115,6 +115,8 @@ PageList.css = `
 }
 
 .section > .summary {
+  grid-column: 3;
   margin: 0.45rem 0 0;
+  opacity: 0.8;
 }
 `
