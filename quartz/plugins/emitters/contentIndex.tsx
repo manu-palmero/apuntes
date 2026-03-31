@@ -13,6 +13,7 @@ export type ContentDetails = {
   slug: FullSlug
   filePath: FilePath
   title: string
+  shortname?: string
   links: SimpleSlug[]
   tags: string[]
   content: string
@@ -103,10 +104,16 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
+          const frontmatterShortname = (file.data.frontmatter as any)?.shortname
+          if (frontmatterShortname) {
+            console.log(`[Build] Shortname detectado en '${slug}':`, frontmatterShortname)
+          }
+
           linkIndex.set(slug, {
             slug,
             filePath: file.data.relativePath!,
             title: file.data.frontmatter?.title!,
+            shortname: frontmatterShortname,
             links: file.data.links ?? [],
             tags: file.data.frontmatter?.tags ?? [],
             content: file.data.text ?? "",
