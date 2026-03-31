@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "es-ES",
     baseUrl: "manu-palmero.github.io/apuntes",
-    ignorePatterns: ["Personal", "Plantillas", ".obsidian", ".trash"],
+    ignorePatterns: ["personal", "personal/**", "plantillas", "plantillas/**", ".obsidian", ".trash"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
