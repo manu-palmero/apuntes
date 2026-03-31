@@ -1,46 +1,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Convertir-entre-formatos-de-discos-virtuales</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Corregir-audio-entrecortado-al-jugar-o-utilizar-aplicaciones-o-juegos-que-requieren-un-uso-intensivo-de-la-CPU</loc>
-    <lastmod>2026-01-27T02:40:22.608Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-la-suspenci%C3%B3n-de-la-salida-de-audio-(Pipewire,-Wireplumber)</loc>
-    <lastmod>2026-01-27T02:41:47.656Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Dividir-GIF-en-5-partes-con-FFmpeg</loc>
-    <lastmod>2026-03-31T02:33:33.979Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</loc>
-    <lastmod>2025-10-05T02:43:05.166Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Conectar-KeePassXC-y-Brave-usando-Flatpak</loc>
-    <lastmod>2025-10-25T20:58:55.381Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Configuraci%C3%B3n-de-GRUB</loc>
-    <lastmod>2025-10-09T18:13:55.786Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Desactivar-reactivaci%C3%B3n-por-USB-en-Linux</loc>
-    <lastmod>2026-01-07T19:34:03.798Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-el-modo-escritorio-al-arrancar-en-Bazzite-OS</loc>
-    <lastmod>2026-02-01T03:23:13.355Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Orden-de-ejecuci%C3%B3n-para-archivos-de-configuraci%C3%B3n</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Teor%C3%ADa/Gobernador-del-CPU</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
-  </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/agregar-gif-steam-workshop</loc>
-    <lastmod>2026-03-31T18:17:13.977Z</lastmod>
-  </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Hardware/Externo/Rat%C3%B3n</loc>
     <lastmod>2025-09-27T20:51:52.268Z</lastmod>
   </url><url>
@@ -89,14 +47,56 @@
     <loc>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Sistema-Operativo</loc>
     <lastmod>2025-10-13T23:42:03.141Z</lastmod>
   </url><url>
-    <loc>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/%C3%8Dndice-mantenimiento-PC</loc>
-    <lastmod>2025-09-27T19:19:19.000Z</lastmod>
+    <loc>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/indice-mantenimiento-pc</loc>
+    <lastmod>2026-03-31T21:20:59.661Z</lastmod>
   </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Teor%C3%ADa/ESP32/guia_esp32s3_espidf</loc>
     <lastmod>2026-03-18T16:04:43.731Z</lastmod>
   </url><url>
     <loc>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/glosario-ia</loc>
     <lastmod>2026-03-31T18:15:57.342Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Convertir-entre-formatos-de-discos-virtuales</loc>
+    <lastmod>2025-10-05T02:34:03.574Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Corregir-audio-entrecortado-al-jugar-o-utilizar-aplicaciones-o-juegos-que-requieren-un-uso-intensivo-de-la-CPU</loc>
+    <lastmod>2026-01-27T02:40:22.608Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Desactivar-la-suspenci%C3%B3n-de-la-salida-de-audio-(Pipewire,-Wireplumber)</loc>
+    <lastmod>2026-01-27T02:41:47.656Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Dividir-GIF-en-5-partes-con-FFmpeg</loc>
+    <lastmod>2026-03-31T02:33:33.979Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Ejectutar-sudo-sin-contrase%C3%B1a</loc>
+    <lastmod>2025-10-05T02:32:51.624Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Comandos-Linux/Pantalla-de-arranque-personalizada-con-plymouth</loc>
+    <lastmod>2025-10-05T02:43:05.166Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Conectar-KeePassXC-y-Brave-usando-Flatpak</loc>
+    <lastmod>2025-10-25T20:58:55.381Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Configuraci%C3%B3n-de-GRUB</loc>
+    <lastmod>2025-10-09T18:13:55.786Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Desactivar-reactivaci%C3%B3n-por-USB-en-Linux</loc>
+    <lastmod>2026-01-07T19:34:03.798Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Inicio-autom%C3%A1tico-en-el-modo-escritorio-al-arrancar-en-Bazzite-OS</loc>
+    <lastmod>2026-02-01T03:23:13.355Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Instalaci%C3%B3n-de-Arch-Linux-y-configuraci%C3%B3n</loc>
+    <lastmod>2025-10-15T18:13:06.188Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Orden-de-ejecuci%C3%B3n-para-archivos-de-configuraci%C3%B3n</loc>
+    <lastmod>2025-10-05T02:34:54.109Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Computadoras/Linux/Teor%C3%ADa/Gobernador-del-CPU</loc>
+    <lastmod>2025-10-05T02:36:07.268Z</lastmod>
+  </url><url>
+    <loc>https://manu-palmero.github.io/apuntes/Utilidad/Juegos/agregar-gif-steam-workshop</loc>
+    <lastmod>2026-03-31T18:17:13.977Z</lastmod>
   </url><url>
     <loc>https://manu-palmero.github.io/apuntes/</loc>
     <lastmod>2025-09-27T19:19:19.000Z</lastmod>
