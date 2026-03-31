@@ -9,7 +9,7 @@ function Exit-WithError {
   exit 1
 }
 
-# Cargar variables desde .env
+# Carga de variables desde .env
 if (Test-Path ".env") {
   Get-Content ".env" | ForEach-Object {
     if ($_ -match '^\s*#' -or $_ -match '^\s*$') {
@@ -35,25 +35,25 @@ if ([string]::IsNullOrWhiteSpace($NOTES_DIR) -or [string]::IsNullOrWhiteSpace($C
   Exit-WithError "Error: faltan variables requeridas en .env (NOTES_DIR, CONTENT_DIR, COMMIT_MSG)"
 }
 
-# Verificar que la carpeta de notas existe
+# Verificación de existencia de la carpeta de notas
 if (-not (Test-Path -Path $NOTES_DIR -PathType Container)) {
   Exit-WithError "Error: $NOTES_DIR no existe"
 }
 
-# Verificar que estamos en un repositorio git
+# Verificación de ejecución dentro de un repositorio git
 try {
   git rev-parse --git-dir | Out-Null
 } catch {
   Exit-WithError "Error: No estamos en un repositorio git"
 }
 
-# Crear la carpeta .content si no existe
+# Creación de la carpeta .content en caso de ausencia
 New-Item -ItemType Directory -Force -Path $CONTENT_DIR | Out-Null
 
-# Carpeta objetivo para operaciones de git
+# Definición de carpeta objetivo para operaciones de git
 $PUBLIC_DIR = "public"
 
-# Sincronizar con rsync (solo cambios necesarios)
+# Sincronización con rsync (solo cambios necesarios)
 Write-Host "📂 Sincronizando contenido..."
 try {
   & rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" 2>&1 | Where-Object { $_ } > $null
@@ -61,7 +61,7 @@ try {
   Exit-WithError "Error: rsync falló"
 }
 
-# Compilar con Quartz
+# Compilación con Quartz
 Write-Host "🔨 Compilando con Quartz..."
 try {
   npx quartz build 2>&1 | Where-Object { $_ } > $null
@@ -69,11 +69,11 @@ try {
   Exit-WithError "Error: Quartz build falló"
 }
 
-# Agregar solo cambios de public al staging
+# Agregado al staging solo de cambios en public
 Write-Host "📝 Agregando cambios de $PUBLIC_DIR..."
 git add "$PUBLIC_DIR" 2>&1 | Where-Object { $_ } > $null
 
-# Verificar si hay cambios solo en public
+# Verificación de cambios únicamente en public
 & git diff --cached --quiet -- "$PUBLIC_DIR"
 $cachedPublicStatus = $LASTEXITCODE
 
@@ -82,7 +82,7 @@ if ($cachedPublicStatus -eq 0) {
   exit 0
 }
 
-# Hacer commit solo de public
+# Commit limitado únicamente a public
 Write-Host "💾 Haciendo commit..."
 try {
   git commit -m "$COMMIT_MSG" -- "$PUBLIC_DIR" 2>&1 | Where-Object { $_ } > $null
@@ -90,7 +90,7 @@ try {
   Exit-WithError "Error: commit falló"
 }
 
-# Subir a GitHub
+# Envío de cambios a GitHub
 Write-Host "🚀 Subiendo a GitHub..."
 try {
   git push 2>&1 | Where-Object { $_ } > $null

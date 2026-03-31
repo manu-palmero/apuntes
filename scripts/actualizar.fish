@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-# Cargar variables desde .env
+# Carga de variables desde .env
 if test -f .env
 	while read -l line
 		set line (string trim -- "$line")
@@ -34,31 +34,31 @@ else
 	exit 1
 end
 
-# Verificar variables requeridas
+# Verificación de variables requeridas
 if test -z "$NOTES_DIR"; or test -z "$CONTENT_DIR"; or test -z "$COMMIT_MSG"
 	echo "Error: faltan variables requeridas en .env (NOTES_DIR, CONTENT_DIR, COMMIT_MSG)"
 	exit 1
 end
 
-# Verificar que la carpeta de notas existe
+# Verificación de existencia de la carpeta de notas
 if not test -d "$NOTES_DIR"
 	echo "Error: $NOTES_DIR no existe"
 	exit 1
 end
 
-# Verificar que estamos en un repositorio git
+# Verificación de ejecución dentro de un repositorio git
 if not git rev-parse --git-dir &>/dev/null
-	echo "Error: No estamos en un repositorio git"
+	echo "Error: No se está en un repositorio git"
 	exit 1
 end
 
-# Crear la carpeta .content si no existe
+# Creación de la carpeta .content en caso de ausencia
 mkdir -p "$CONTENT_DIR"
 
-# Carpeta objetivo para operaciones de git
+# Definición de carpeta objetivo para operaciones de git
 set -l PUBLIC_DIR "public"
 
-# Sincronizar con rsync (solo cambios necesarios)
+# Sincronización con rsync (solo cambios necesarios)
 echo "📂 Sincronizando contenido..."
 rsync -a --delete "$NOTES_DIR/" "$CONTENT_DIR/" >/dev/null
 if test $status -ne 0
@@ -66,7 +66,7 @@ if test $status -ne 0
 	exit 1
 end
 
-# Compilar con Quartz
+# Compilación con Quartz
 echo "🔨 Compilando con Quartz..."
 npx quartz build >/dev/null
 if test $status -ne 0
@@ -74,17 +74,17 @@ if test $status -ne 0
 	exit 1
 end
 
-# Agregar solo cambios de public al staging
+# Agregado al staging solo de cambios en public
 echo "📝 Agregando cambios de $PUBLIC_DIR..."
 git add "$PUBLIC_DIR" >/dev/null 2>/dev/null
 
-# Verificar si hay cambios solo en public
+# Verificación de cambios únicamente en public
 if git diff --cached --quiet -- "$PUBLIC_DIR"
 	echo "✓ Sin cambios en $PUBLIC_DIR para sincronizar"
 	exit 0
 end
 
-# Hacer commit solo de public
+# Commit limitado únicamente a public
 echo "💾 Haciendo commit..."
 git commit -m "$COMMIT_MSG" -- "$PUBLIC_DIR" >/dev/null 2>/dev/null
 if test $status -ne 0
@@ -92,7 +92,7 @@ if test $status -ne 0
 	exit 1
 end
 
-# Subir a GitHub
+# Envío de cambios a GitHub
 echo "🚀 Subiendo a GitHub..."
 git push >/dev/null 2>/dev/null
 if test $status -ne 0
