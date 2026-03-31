@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const Description: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const description = fileData.description?.trim()
+  const description = fileData.frontmatter?.tags?.find((tag) => /^description[/:=].+/i.test(tag))?.replace(/^description[/:=]\s*/i, "")?.trim() || fileData.description?.trim() || ""
   
   if (description) {
     return (
