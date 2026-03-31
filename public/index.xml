@@ -5,66 +5,6 @@
       <link>https://manu-palmero.github.io/apuntes</link>
       <description>Últimas 10 notas on Hola</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
-      <item>
-    <title>Agregar una imagen grande al expositor de Workshop de Steam</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</guid>
-    <description><![CDATA[ Guía para agregar una imagen o GIF animado a tamaño completo, dividido en 5 partes verticales, al expositor de Workshop del perfil de Steam sin que se redimensionen las partes a un cuadrado pequeño. ]]></description>
-    <pubDate>Tue, 31 Mar 2026 03:21:45 GMT</pubDate>
-  </item><item>
-    <title>Dividir GIF en 5 partes con FFmpeg</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Dividir-GIF-en-5-partes-con-FFmpeg</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Dividir-GIF-en-5-partes-con-FFmpeg</guid>
-    <description><![CDATA[ Comando ffmpeg -i entrada.gif -filter_complex \ &quot;[0:v]split=5[s1][s2][s3][s4][s5]; \ [s1]crop=iw/5:ih:0:0,split[s1a][s1b];[s1a]palettegen[p1];[s1b][p1]paletteuse[v1]; \ [s2]crop=iw/5:ih:iw/5:0,split[s2a][s2b];[s2a]palettegen[p2];[s2b][p2]paletteuse[v2]; \ [s3]crop=iw/5:ih:2*iw/5:0,split[s3a][s3... ]]></description>
-    <pubDate>Tue, 31 Mar 2026 02:33:33 GMT</pubDate>
-  </item><item>
-    <title>Página principal</title>
-    <link>https://manu-palmero.github.io/apuntes/</link>
-    <guid>https://manu-palmero.github.io/apuntes/</guid>
-    <description><![CDATA[ Página inicial (⁠ ⁠╹⁠▽⁠╹⁠ ⁠) E Apuntes de cursos Mantenimiento y reparación de computadoras Índice Programación Todavía nada… Cosas útiles de computadoras Cosas de Linux Instalación de Arch Linux Configuración de GRUB Hay más cosas en la carpeta de Cosas Útiles/Computadoras Recetas de cocina Nada po... ]]></description>
-    <pubDate>Tue, 31 Mar 2026 02:22:52 GMT</pubDate>
-  </item><item>
-    <title>Guía de C con ESP-IDF</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Teor%C3%ADa/ESP32/guia_esp32s3_espidf</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Teor%C3%ADa/ESP32/guia_esp32s3_espidf</guid>
-    <description><![CDATA[ Guía de C para programadores con base en Arduino y conocimientos de programación, para programar un ESP32 usando ESP-IDF ]]></description>
-    <pubDate>Wed, 18 Mar 2026 16:04:43 GMT</pubDate>
-  </item><item>
-    <title>Inicio automático en escritorio en Bazzite OS</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-el-modo-escritorio-al-arrancar-en-Bazzite-OS</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Inicio-autom%C3%A1tico-en-el-modo-escritorio-al-arrancar-en-Bazzite-OS</guid>
-    <description><![CDATA[ El problema La imagen de Bazzite OS para Steam Deck viene configurada para iniciar siempre en el modo juego, ya que está orientada a este tipo de dispositivos. ]]></description>
-    <pubDate>Sun, 01 Feb 2026 03:23:13 GMT</pubDate>
-  </item><item>
-    <title>Desactivar suspención de la salida de audio en Linux</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-la-suspenci%C3%B3n-de-la-salida-de-audio-(Pipewire,-Wireplumber)</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Desactivar-la-suspenci%C3%B3n-de-la-salida-de-audio-(Pipewire,-Wireplumber)</guid>
-    <description><![CDATA[ Por defecto, la salida de audio se suspende luego de cinco segundos de inactividad, lo que genera ruido blanco en los altavoces y un notable retraso de audio al habilitar de nuevo la salida después de haber sido suspendida. ]]></description>
-    <pubDate>Tue, 27 Jan 2026 02:41:47 GMT</pubDate>
-  </item><item>
-    <title>Corregir audio entrecortado con pipewire</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Corregir-audio-entrecortado-al-jugar-o-utilizar-aplicaciones-o-juegos-que-requieren-un-uso-intensivo-de-la-CPU</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Comandos-Linux/Corregir-audio-entrecortado-al-jugar-o-utilizar-aplicaciones-o-juegos-que-requieren-un-uso-intensivo-de-la-CPU</guid>
-    <description><![CDATA[ Hay que aumentar default.clock.min-quantum dentro del archivo /usr/share/pipewire/pipewire.conf a 1024 o al menos a más del valor por defecto. ]]></description>
-    <pubDate>Tue, 27 Jan 2026 02:40:22 GMT</pubDate>
-  </item><item>
-    <title>Desactivar reactivación por USB en Linux</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Desactivar-reactivaci%C3%B3n-por-USB-en-Linux</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Desactivar-reactivaci%C3%B3n-por-USB-en-Linux</guid>
-    <description><![CDATA[ a ]]></description>
-    <pubDate>Wed, 07 Jan 2026 19:34:03 GMT</pubDate>
-  </item><item>
-    <title>Índice mantenimiento PC</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/%C3%8Dndice-mantenimiento-PC</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/%C3%8Dndice-mantenimiento-PC</guid>
-    <description><![CDATA[ Índice del curso Es recomendable seguir este índice si se quiere leer en orden. ]]></description>
-    <pubDate>Sat, 22 Nov 2025 01:45:10 GMT</pubDate>
-  </item><item>
-    <title>Conectar KeePassXC y Brave usando Flatpak</title>
-    <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Conectar-KeePassXC-y-Brave-usando-Flatpak</link>
-    <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Computadoras/Linux/Conectar-KeePassXC-y-Brave-usando-Flatpak</guid>
-    <description><![CDATA[ # modify keepassxc browser path In the KeePassXC UI. ]]></description>
-    <pubDate>Sat, 25 Oct 2025 20:58:55 GMT</pubDate>
-  </item>
+      
     </channel>
   </rss>
