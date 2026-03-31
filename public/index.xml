@@ -6,6 +6,12 @@
       <description>Últimas 10 notas on Hola</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Glosario de IA</title>
+    <link>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Glosario-IA</link>
+    <guid>https://manu-palmero.github.io/apuntes/Estudios/Programaci%C3%B3n/Glosario-IA</guid>
+    <description><![CDATA[ Glosario de terminología y tecnicismos en IA como agente para programar y automatizar tareas Este glosario recopila los términos más comunes y técnicos que se emplean al trabajar con agentes de IA en entornos de desarrollo. ]]></description>
+    <pubDate>Tue, 31 Mar 2026 15:40:19 GMT</pubDate>
+  </item><item>
     <title>Agregar una imagen grande al expositor de Workshop de Steam</title>
     <link>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</link>
     <guid>https://manu-palmero.github.io/apuntes/Cosas-%C3%BAtiles/Juegos/Agregar-GIF-al-perfil-de-Steam</guid>
@@ -59,12 +65,6 @@
     <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Sistema-Operativo</guid>
     <description><![CDATA[ Definición Es un conjunto de programas que permiten controlar el hardware de la computadora, ya sea el interno o el externo. ]]></description>
     <pubDate>Mon, 13 Oct 2025 23:42:03 GMT</pubDate>
-  </item><item>
-    <title>Programa</title>
-    <link>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Programa</link>
-    <guid>https://manu-palmero.github.io/apuntes/Estudios/Mantenimiento-y-reparaci%C3%B3n-de-computadoras/Software/Programa</guid>
-    <description><![CDATA[ Definición Un programa es un conjunto de pasos lógicos escritos en un lenguaje de programación que nos permite realizar una tarea específica. ]]></description>
-    <pubDate>Mon, 13 Oct 2025 23:38:56 GMT</pubDate>
   </item>
     </channel>
   </rss>
