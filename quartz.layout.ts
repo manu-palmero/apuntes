@@ -2,22 +2,29 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import { Options } from "./quartz/components/Explorer"
 
+
 const explorerOptions: Partial<Options> = {
   mapFn: (node) => {
+    const originalDisplayName = node.displayName
+
+    // Se prioriza la propiedad `shortname` en el frontmatter. Si no existe, se busca en los tags.
+    const frontmatterShortname = (node.data as any)?.shortname
     const shortNameTag = node.data?.tags?.find((tag) => /^shortname[/:=].+/i.test(tag))
-    const shortName = shortNameTag?.replace(/^shortname[/:=]\s*/i, "")?.trim()
+    const tagShortName = shortNameTag?.replace(/^shortname[/:=]\s*/i, "")?.trim()
+    
+    const shortName = frontmatterShortname || tagShortName
 
     if (shortName) {
       node.displayName = shortName
     }
 
-    // node.displayName = node.displayName.toUpperCase()
-    // if (node.isFolder) {
-    //   node.displayName = "📁 " + node.displayName
-    // }
-    // else {
-    //   node.displayName = "📄 " + node.displayName
-    // }
+    node.displayName = node.displayName.toUpperCase()
+    if (node.isFolder) {
+      node.displayName = "📁 " + node.displayName
+    }
+    else {
+      node.displayName = "📄 " + node.displayName
+    }
     return node
   },
   sortFn: (a, b) => {
