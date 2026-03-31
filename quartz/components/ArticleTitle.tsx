@@ -1,19 +1,32 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { classNames } from "../util/lang"
+import { capitalize, classNames } from "../util/lang"
 
-const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const title = fileData.frontmatter?.title
-  if (title) {
-    return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
-  } else {
-    return null
-  }
+type Options = {
+  capitalizeFirstLetter?: boolean
 }
 
-ArticleTitle.css = `
+const defaultOptions: Options = {
+  capitalizeFirstLetter: false,
+}
+
+export default ((userOpts?: Partial<Options>) => {
+  const opts: Options = { ...defaultOptions, ...userOpts }
+
+  const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+    const title = fileData.frontmatter?.title
+    if (title) {
+      const renderedTitle = opts.capitalizeFirstLetter ? capitalize(title) : title
+      return <h1 class={classNames(displayClass, "article-title")}>{renderedTitle}</h1>
+    } else {
+      return null
+    }
+  }
+
+  ArticleTitle.css = `
 .article-title {
   margin: 2rem 0 0 0;
 }
 `
 
-export default (() => ArticleTitle) satisfies QuartzComponentConstructor
+  return ArticleTitle
+}) satisfies QuartzComponentConstructor
