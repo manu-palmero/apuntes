@@ -83,6 +83,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                     {title}
                   </a>
                 </h3>
+                {description && <p class="summary">{description}</p>}
               </div>
               <ul class="tags">
                 {tags.map((tag) => (
@@ -96,7 +97,6 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                   </li>
                 ))}
               </ul>
-              {description && <p class="summary">{description}</p>}
             </div>
           </li>
         )
@@ -114,9 +114,10 @@ PageList.css = `
   margin: 0;
 }
 
-.section > .summary {
-  grid-column: 3;
-  margin: 0.45rem 0 0;
-  opacity: 0.8;
+.section > .desc > .summary {
+  margin: 0.5rem 0 0 0;
+  opacity: 0.7;
+  font-size: 0.95em;
+  line-height: 1.4;
 }
 `
