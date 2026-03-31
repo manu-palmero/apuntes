@@ -68,7 +68,11 @@ end
 
 # Compilación con Quartz
 echo "🔨 Compilando con Quartz..."
-npx quartz build >/dev/null
+if set -q DEBUG_BUILD; and test "$DEBUG_BUILD" = "1"
+        npx quartz build
+else
+        npx quartz build >/dev/null
+end
 if test $status -ne 0
 	echo "Error: Quartz build falló"
 	exit 1

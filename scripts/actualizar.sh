@@ -40,7 +40,15 @@ fi
 
 # Compilación con Quartz
 echo "🔨 Compilando con Quartz..."
-if ! npx quartz build >/dev/null; then
+if [[ "${DEBUG_BUILD:-0}" == "1" ]]; then
+  npx quartz build
+  build_status=$?
+else
+  npx quartz build >/dev/null
+  build_status=$?
+fi
+
+if [[ $build_status -ne 0 ]]; then
   echo "Error: Quartz build falló"
   exit 1
 fi

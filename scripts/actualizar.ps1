@@ -64,7 +64,11 @@ try {
 # Compilación con Quartz
 Write-Host "🔨 Compilando con Quartz..."
 try {
-  npx quartz build 2>&1 | Where-Object { $_ } > $null
+  if ([System.Environment]::GetEnvironmentVariable("DEBUG_BUILD") -eq "1") {
+    npx quartz build
+  } else {
+    npx quartz build 2>&1 | Where-Object { $_ } > $null
+  }
 } catch {
   Exit-WithError "Error: Quartz build falló"
 }
