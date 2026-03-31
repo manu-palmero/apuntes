@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Actualizar Notas Quartz
+Comment=Sincroniza y publica las notas de Obsidian con Quartz
+Exec=fish /mnt/home/manu/Documentos/Obsidian/apuntes/scripts/actualizar.fish
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;
