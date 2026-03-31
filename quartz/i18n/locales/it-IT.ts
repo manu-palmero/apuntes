@@ -8,11 +8,7 @@ export default {
   components: {
     callout: {
       note: "Nota",
-<<<<<<< HEAD
-      abstract: "Astratto",
-=======
       abstract: "Abstract",
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
       info: "Info",
       todo: "Da fare",
       tip: "Consiglio",
@@ -21,11 +17,7 @@ export default {
       warning: "Attenzione",
       failure: "Errore",
       danger: "Pericolo",
-<<<<<<< HEAD
-      bug: "Bug",
-=======
       bug: "Problema",
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
       example: "Esempio",
       quote: "Citazione",
     },
@@ -51,18 +43,11 @@ export default {
     },
     recentNotes: {
       title: "Note recenti",
-<<<<<<< HEAD
-      seeRemainingMore: ({ remaining }) => `Vedi ${remaining} altro →`,
-    },
-    transcludes: {
-      transcludeOf: ({ targetSlug }) => `Transclusione di ${targetSlug}`,
-=======
       seeRemainingMore: ({ remaining }) =>
         remaining === 1 ? "Vedi 1 altra →" : `Vedi altre ${remaining} →`,
     },
     transcludes: {
       transcludeOf: ({ targetSlug }) => `Inclusione di ${targetSlug}`,
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
       linkToOriginal: "Link all'originale",
     },
     search: {
@@ -70,27 +55,16 @@ export default {
       searchBarPlaceholder: "Cerca qualcosa",
     },
     tableOfContents: {
-<<<<<<< HEAD
-      title: "Tabella dei contenuti",
-    },
-    contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} minuti`,
-=======
       title: "Indice",
     },
     contentMeta: {
       readingTime: ({ minutes }) => (minutes === 1 ? "1 minuto" : `${minutes} minuti`),
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
     },
   },
   pages: {
     rss: {
       recentNotes: "Note recenti",
-<<<<<<< HEAD
-      lastFewNotes: ({ count }) => `Ultime ${count} note`,
-=======
       lastFewNotes: ({ count }) => (count === 1 ? "Ultima nota" : `Ultime ${count} note`),
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
     },
     error: {
       title: "Non trovato",
@@ -107,14 +81,9 @@ export default {
       tagIndex: "Indice etichette",
       itemsUnderTag: ({ count }) =>
         count === 1 ? "1 oggetto con questa etichetta." : `${count} oggetti con questa etichetta.`,
-<<<<<<< HEAD
-      showingFirst: ({ count }) => `Prime ${count} etichette.`,
-      totalTags: ({ count }) => `Trovate ${count} etichette totali.`,
-=======
       showingFirst: ({ count }) => (count === 1 ? "Prima etichetta." : `Prime ${count} etichette.`),
       totalTags: ({ count }) =>
         count === 1 ? "Trovata 1 etichetta in totale." : `Trovate ${count} etichette totali.`,
->>>>>>> 59b58076016c5e5f09f16ab0395fed02e2ebb72e
     },
   },
 } as const satisfies Translation
