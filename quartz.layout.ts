@@ -18,7 +18,7 @@ const explorerOptions: Partial<Options> = {
       node.displayName = shortName
     }
 
-    node.displayName = node.displayName.toUpperCase()
+    // node.displayName = node.displayName.toUpperCase()
     if (node.isFolder) {
       node.displayName = "📁 " + node.displayName
     }
