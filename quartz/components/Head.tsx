@@ -12,9 +12,17 @@ export default (() => {
     externalResources,
     ctx,
   }: QuartzComponentProps) => {
+    const frontmatterShortname = (fileData.frontmatter as any)?.shortname
+    const shortNameTag = fileData.frontmatter?.tags?.find((tag) => /^shortname[/:=].+/i.test(tag))
+    const tagShortName = shortNameTag?.replace(/^shortname[/:=]\s*/i, "")?.trim()
+    const shortName = frontmatterShortname || tagShortName
     const titleSuffix = cfg.pageTitleSuffix ?? ""
     const title =
-      (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+      (shortName ?? fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) +
+      titleSuffix
+    // const title =
+    //         (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+
     const description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??

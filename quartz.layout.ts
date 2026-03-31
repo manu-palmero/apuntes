@@ -5,7 +5,6 @@ import { Options } from "./quartz/components/Explorer"
 
 const explorerOptions: Partial<Options> = {
   mapFn: (node) => {
-    const originalDisplayName = node.displayName
 
     // Se prioriza la propiedad `shortname` en el frontmatter. Si no existe, se busca en los tags.
     const frontmatterShortname = (node.data as any)?.shortname
